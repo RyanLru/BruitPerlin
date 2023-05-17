@@ -100,8 +100,7 @@ def BruitPerlin(taille, nbOctaves, persistance, lacunarite):
     lacunarite = 1.5  # Lacunarité qui représente l'augmentation de la fréquence du bruit
 
     bruit = bruitPerlin2D(taille, nbOctaves, persistance, lacunarite)
-    plt.imshow(bruit, cmap="gray")
-    plt.show()
 
 
-BruitPerlin(100, 4, 0.5, 1.5)
+    return bruit
+
